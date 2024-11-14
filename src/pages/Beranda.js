@@ -12,7 +12,7 @@ const Beranda = () => {
             </div>
             <div className="mb-5">
                 <BerandaBawah
-                    intro="Penerapan Fisika dalam Kehidupan Sehari-hari"
+                    intro="Apakah Fisika berguna dalam Kehidupan Sehari-hari ?"
                     image={foto3}
                     title="Contoh Penerapan Fisika"
                     description={

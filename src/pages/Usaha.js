@@ -1,5 +1,6 @@
 import KalUsaha from '../components/KalUsaha';
 import '../index.css';
+import Video from '../components/Video';
 
 const Usaha = () => {
     return (
@@ -7,7 +8,7 @@ const Usaha = () => {
             <div className="container-fluid mt-5">
                 <div className="row justify-content-center">
                     <div className="col-md-10">
-                        <h1 className="text-center mb-4 text-secondary fw-bold display-4">Usaha Fisika</h1>
+                        <h1 className="text-center mb-4 text-secondary fw-bold display-4">Usaha</h1>
                         <div className="card mb-4">
                             <div className="card-body">
                                 <h2 className="card-title h4">Pengertian dan Rumus Usaha</h2>
@@ -53,6 +54,7 @@ const Usaha = () => {
                     </div>
                 </div>
             </div>
+        <Video/>   
         <KalUsaha/>
         </>
     );
