@@ -6,6 +6,9 @@ import Beranda from "./pages/Beranda";
 import 'bootstrap/dist/css/bootstrap.css';
 import Newtonn from "./pages/Newtonn";
 import Newton1 from "./pages/newton1"; 
+import Newton from "./pages/Newtonn";
+
+import Usaha from "./pages/Usaha";
 
 
 const App = () => {
@@ -17,15 +20,11 @@ const App = () => {
                 <Routes>
 
                     <Route path="/" element={<Beranda/>} />
-
                     <Route path="beranda" element={<Beranda/>} />
-
                     <Route path="newtonn" element ={<Newtonn/>} />
-
                     <Route path="newton1" element={<Newton1 />} />
-
+                    <Route path="usaha" element={<Usaha/>} />
                 </Routes>
-
             </Router>
 
     )

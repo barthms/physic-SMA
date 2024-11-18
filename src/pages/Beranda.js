@@ -12,12 +12,12 @@ const Beranda = () => {
             </div>
             <div className="mb-5">
                 <BerandaBawah
-                    intro="Penerapan Fisika dalam Kehidupan Sehari-hari"
+                    intro="Apakah Fisika berguna dalam Kehidupan Sehari-hari ?"
                     image={foto3}
                     title="Contoh Penerapan Fisika"
                     description={
                         <>
-                            Fisika bukan hanya dipelajari di ruang kelas, tetapi juga banyak diterapkan dalam kehidupan sehari-hari. Berikut adalah beberapa contoh penerapan fisika yang sering kita temui:
+                            <p>Fisika bukan hanya dipelajari di ruang kelas, tetapi juga banyak diterapkan dalam kehidupan sehari-hari. Berikut adalah beberapa contoh penerapan fisika yang sering kita temui:</p>
                             <ul>
                                 <li><strong>Pergerakan Mobil:</strong> Ketika kita mengendarai mobil, kita memanfaatkan hukum gerak Newton yang menjelaskan bagaimana mobil bergerak, berhenti, atau berbelok. Misalnya, saat mobil berhenti mendadak, kita merasakan gaya dorong ke depan karena hukum inersia.</li>
                                 <li><strong>Elektronik Rumah Tangga:</strong> Setiap alat elektronik seperti televisi, kulkas, dan ponsel bekerja berdasarkan prinsip fisika, terutama dalam aliran listrik dan magnetisme. Tanpa listrik, perangkat ini tidak akan berfungsi.</li>
