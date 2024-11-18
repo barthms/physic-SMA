@@ -4,7 +4,7 @@ import Beranda from "./pages/Beranda";
 import 'bootstrap/dist/css/bootstrap.css';
 
 import Newton from "./pages/Newtonn";
-=======
+
 import Usaha from "./pages/Usaha";
 
 
@@ -14,9 +14,7 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Beranda/>} />
                     <Route path="beranda" element={<Beranda/>} />
-
                     <Route path="newtonn" element ={<Newton/>} />
-=======
                     <Route path="usaha" element={<Usaha/>} />
 
                 </Routes>
