@@ -1,7 +1,7 @@
 import React from "react";
-import Perpindahan from '../assets/Perpindahan.jpg';
-import Jarak from '../assets/Jarak.jpg';
-import "./GerakLurus.css";
+import Perpindahan from '../assets/foto2.jpeg';
+import Jarak from '../assets/contoh.jpg';
+// import "./GerakLurus.css";
 
 
 const GerakLurus = () => {
