@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import inersia from '../assets/inersia.jpg';
-import percepatan from '../assets/percepatan.png';
+import percepatan from '../assets/percepatan.jpeg';
 import aksireaksi from '../assets/aksireaksi.jpg'
 const NewtonLaws = () => {
   const [showExplanations, setShowExplanations] = useState({
