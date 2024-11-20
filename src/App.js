@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Beranda from "./pages/Beranda";
 import Newtonn from "./pages/Newtonn";
 import Newton1 from "./pages/newton1";
-// import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/Sidebar";
 import Hooke from './pages/Hooke';
 import Usaha from "./pages/Usaha";
 import GerakLurus from "./pages/GerakLurus";
@@ -17,10 +17,10 @@ const App = () => {
         <Router>
             <div>
                 <>
-                {/* <Sidebar /> */}
+                <Sidebar />
                 <div className="main-content">
                     <Routes>
-                        <Route path="/" element={<Dashboard />} />
+                        <Route path="/" element={<Beranda/>} />
                         <Route path="/beranda" element={<Beranda />} />
                         <Route path="/pages/Hooke" element={<Hooke />} />
                         <Route path="/newtonn" element={<Newtonn />} />
