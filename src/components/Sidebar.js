@@ -4,45 +4,22 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../styling/sidebar.css';
 
 const Sidebar = () => {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true); // State untuk mengelola status sidebar
+    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
-    // Fungsi untuk toggle status sidebar
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
 
     return (
-        <>
-            {/* Tombol untuk membuka/menutup sidebar */}
+        <div className={`wrapper ${isSidebarOpen ? 'sidebar-open' : ''}`}>
             <button
                 className="toggle-btn"
                 onClick={toggleSidebar}
-                style={{
-                    position: 'absolute',
-                    top: '20px',
-                    left: isSidebarOpen ? '320px' : '20px', // Menyesuaikan posisi tombol toggle
-                    transition: 'left 0.3s ease',
-                    zIndex: 1001,
-                    padding: '10px',
-                    backgroundColor: '#007bff',
-                    color: 'white',
-                    border: 'none',
-                    borderRadius: '5px',
-                    cursor: 'pointer',
-                }}
+                aria-label="Toggle Sidebar"
             >
-                {isSidebarOpen ? '←' : '→'}
             </button>
 
-            {/* Sidebar */}
-            <div
-                className={`sidebar ${isSidebarOpen ? 'open' : ''}`}
-                style={{
-                    width: isSidebarOpen ? '300px' : '0', // Mengatur lebar sidebar
-                    transition: 'width 0.3s ease',
-                    display: 'grid',
-                }}
-            >
+            <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
                 <div className="sidebar-header">
                     <h3>Materi Pembelajaran</h3>
                 </div>
@@ -65,10 +42,10 @@ const Sidebar = () => {
                                 <i className="fas fa-atom"></i>
                                 <span>Hukum Newton</span>
                             </Link>
-                            <ul className="sub-nav">
+                            <ul className="sub-nav-list">
                                 <li>
-                                    <Link to="/newton1" className="nav-link">
-                                        <span>Hukum Newton 1</span>
+                                    <Link to="/newton1" className="nav-link-small">
+                                        <span>Jenis Hukum Newton</span>
                                     </Link>
                                 </li>
                             </ul>
@@ -79,16 +56,27 @@ const Sidebar = () => {
                                 <span>Usaha</span>
                             </Link>
                         </li>
+                    </ul>
+                </nav>
+                <div className="sidebar-header">
+                    <h3>Latihan Soal</h3>
+                </div>
+                    <ul className="nav-list">
                         <li className="nav-item">
-                            <Link to="/geraklurus" className="nav-link">
+                            <Link to="/latihanNewton" className="nav-link">
                                 <i className="fas fa-arrow-right"></i>
-                                <span>Gerak Lurus</span>
+                                <span>Hukum Newton</span>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/latihanHook" className="nav-link">
+                                <i className="fas fa-arrow-right"></i>
+                                <span>Hukum Hook</span>
                             </Link>
                         </li>
                     </ul>
-                </nav>
             </div>
-        </>
+        </div>
     );
 };
 

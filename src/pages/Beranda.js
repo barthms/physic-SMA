@@ -44,9 +44,6 @@ const Beranda = () => {
                     }
                 />
             </div>
-            <div>
-                <button></button>
-            </div>
         </>
     );
 };
