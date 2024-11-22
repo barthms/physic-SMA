@@ -6,6 +6,10 @@ import Beranda from "./pages/Beranda";
 import 'bootstrap/dist/css/bootstrap.css';
 import Newtonn from "./pages/Newtonn";
 import Newton1 from "./pages/newton1"; 
+import FluidaStatic from "./pages/fluida";
+
+
+
 
 
 const App = () => {
@@ -23,6 +27,10 @@ const App = () => {
                     <Route path="newtonn" element ={<Newtonn/>} />
 
                     <Route path="newton1" element={<Newton1 />} />
+                    
+                    <Route path="fluida" element= {<FluidaStatic/>}/>
+
+                    
 
                 </Routes>
 

@@ -1,0 +1,89 @@
+/* Fluida.css */
+
+/* Menyusun ulang layout */
+.fluida-container {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f8ff;
+}
+
+/* Header */
+.fluida-header {
+  text-align: center;
+  background-color: #00bcd4;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fluida-header h1 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Konten */
+.fluida-content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 20px;
+}
+
+.fluida-content h2, .fluida-content h3, .fluida-content h4, .fluida-content h5 {
+  color: #00796b;
+}
+
+.fluida-content p {
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.chart-container {
+  width: 80%;
+  height: 400px;
+  margin: 20px auto;
+  border: 2px solid #00bcd4;
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.depth-control {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.depth-control label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.depth-control input {
+  width: 70%;
+  max-width: 400px;
+  margin: 0 10px;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .fluida-content {
+    padding: 15px;
+  }
+
+  .chart-container {
+    width: 100%;
+    height: 300px;
+  }
+}
