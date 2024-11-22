@@ -13,9 +13,6 @@ const Sidebar = () => {
         <div className={`sidebar ${isOpen ? "open" : "closed"}`}>
             <div className="sidebar-header">
                 <h3>Materi Fisika</h3>
-                {/* <button className="toggle-btn" onClick={toggleSidebar}>
-                    {isOpen ? "Close" : "Open"}
-                </button> */}
             </div>
             <ul className="nav-list">
                 <li className="nav-item">
@@ -32,6 +29,9 @@ const Sidebar = () => {
                 </li>
                 <li className="nav-item">
                     <Link to="/gerakmelingkar">Gerak Melingkar</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/fluida">Fluida</Link>
                 </li>
             </ul>
         </div>
