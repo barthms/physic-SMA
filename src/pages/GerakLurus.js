@@ -1,9 +1,62 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Perpindahan from "../assets/foto2.jpeg";
+import mobil1 from "../assets/mobil1.png";
 import "./GerakLurus.css";
 
-const GerakLurus = () => {
+const AnimasiMobil = () => {
+  const [jarak, setJarak]= useState(0);
+  const [posisi, setPosisi]= useState(0);
+
+  const handleInputChange =( event) => {
+    setJarak(Number(event.target.value));
+    console.log('Posisi:',posisi);
+};
+
+  const gerakkanmobil = () => {
+    if (jarak > 50 ) {
+      alert("jarak maksimal adalah 50meter!");
+    } else {
+      setPosisi(jarak);
+      console.log("Posisi baru:",jarak);
+    }
+  };
+
+  return (
+    <div className="container" >
+      <h1>Simulasi Gerak Mobil</h1>
+      <div className="control-panel">
+        <label htmlFor="jarak">Masukkan jarak(meter): </label>
+        <input 
+        type="number"
+        id="jarak"
+        value={jarak}
+        onChange={handleInputChange}
+        placeholder="0-50"
+        />
+        <button onClick={gerakkanmobil}>Gerakkan Mobil</button>
+      </div>
+      <div className="lintasan">
+        <div
+          className="mobil"
+          style={{ transform: `translateX(${(posisi / 50 ) * 100}%) `}}
+        >
+        <img src={mobil1} alt="Mobil" style={{ width: '40px', height: 'auto' }} />
+
+        </div>
+        <div className="garis">
+          {[...Array(11)] .map((_, index) => (
+            <span key={index} className="tanda">
+              {index * 5} meter
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+  const GerakLurus = () => {
   const data = [
     {
       title: "Pengertian Gerak Lurus",
@@ -136,6 +189,7 @@ const GerakLurus = () => {
           </Col>
         ))}
       </Row>
+      <AnimasiMobil />
     </Container>
   );
 };
