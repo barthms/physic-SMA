@@ -59,6 +59,20 @@ const Sidebar = () => {
                                 <i className="fas fa-spring"></i>
                                 <span>Hukum Hooke</span>
                             </Link>
+                            <ul className="sub-nav">
+                                <li>
+                                    <Link to="/EnergiP" className="nav-link">
+                                    <i className="fas fa-atom"></i>
+                                    <span>Energi Potensial Pegas</span>
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link to="/Besaran" className="nav-link">
+                                    <i className="fas fa-atom"></i>
+                                    <span>Besaran Hukum Hooke</span>
+                                    </Link>
+                                </li>
+                            </ul>
                         </li>
                         <li className="nav-item">
                             <Link to="/newtonn" className="nav-link">
@@ -83,6 +97,12 @@ const Sidebar = () => {
                             <Link to="/geraklurus" className="nav-link">
                                 <i className="fas fa-arrow-right"></i>
                                 <span>Gerak Lurus</span>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/suhu" className="nav-link">
+                                <i className="fas fa-arrow-right"></i>
+                                <span>Suhu dan Kalor</span>
                             </Link>
                         </li>
                     </ul>

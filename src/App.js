@@ -10,6 +10,9 @@ import Sidebar from "./components/Sidebar";
 import Hooke from './pages/Hooke';
 import Usaha from "./pages/Usaha";
 import GerakLurus from "./pages/GerakLurus";
+import Suhu from "./pages/Suhu";
+import EnergiP from "./pages/EnergiP";
+import Besaran from "./pages/Besaran";
 
 const App = () => {
     return (
@@ -30,6 +33,9 @@ const App = () => {
                         <Route path="/geraklurus" element={<GerakLurus />} />
                         <Route path="/GLB" element={<GerakLurus />} />
                         <Route path="/GLBB" element={<GerakLurus />} />
+                        <Route path="/suhu" element={<Suhu />} /> 
+                        <Route path="/energip" element={<EnergiP/>}/>
+                        <Route path="/besaran" element={<Besaran/>}/>
                     </Routes>
                 </div>
             </div>
