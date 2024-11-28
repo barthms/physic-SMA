@@ -1,11 +1,32 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Container, Row, Col,Card, } from 'react-bootstrap';
+import MathJax from 'mathjax-react';
 import gm1 from '../assets/gm1.png';
 import gm2 from '../assets/gm2.png';
 import gm3 from '../assets/gm3.jpg';
-import gm4 from '../assets/gm4.png';
+import './GerakaMelingkar.css';
 
-const cardData = [
+const FerrisWheel =() => {
+    return (
+        <div className="ferris-wheel-container">
+            <div className="ferris-wheel-icon" style={{ transform: "rotate(0deg) translate(-50%, -140%)"}}>
+            <img src="https://img.icons8.com/color/48/feris-wheel.png" />
+        </div>
+        <div className="ferris-wheel-icon" style={{ transform: "rotate(90deg) translate(-50%, -140%)"}}>
+            <img src="https://img.icons8.com/color/48/feris-wheel.png" />
+        </div>
+        <div className="ferris-wheel-icon" style={{ transform: "rotate(180deg) translate(-50%, -140%)"}}>
+            <img src="https://img.icons8.com/color/48/ferris-wheel.png" />
+        </div>
+        <div className="ferris-wheel-icon" style={{ transform: "rotate(270deg) translate(-50%, -140%)"}}>
+            <img src="https://img.icons8.com/color/48/ferris-wheel.png" />
+        </div>
+    </div>
+
+  );
+};
+    
+const cardData =[
     {
         id: 1,
         title: "Pengertian Gerak melingkar",
@@ -69,7 +90,7 @@ const cardData = [
 
 const GerakMelingkar = () => {
     return (
-        <Container className="my-5">
+        <Container className= "my-5">
             <Row>
                 <Col>
                     <h1 className="text-center mb-4">Gerak Melingkar</h1>
