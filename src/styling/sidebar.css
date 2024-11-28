@@ -75,6 +75,10 @@
     transition: margin-left 0.3s;
 }
 
-.sidebar.closed + .main-content {
+.sidebar.closed{
+    margin-left: 70px; /* Sesuaikan dengan lebar sidebar collapsed */
+}
+
+.main-content {
     margin-left: 70px; /* Sesuaikan dengan lebar sidebar collapsed */
 }

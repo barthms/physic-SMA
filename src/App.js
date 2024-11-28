@@ -15,10 +15,11 @@ import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
 
 import Fluida from "./pages/Fluida";
+import Contoh from "./pages/contoh/Contoh";
 
 const AppContent = () => {
     const location = useLocation();
-    const noSidebarPaths = ["/", "/latihanNewton"];
+    const noSidebarPaths = ["/", "/latihanNewton", '/contoh'];
     const showSidebar = !noSidebarPaths.includes(location.pathname);
 
     return (
@@ -28,7 +29,7 @@ const AppContent = () => {
                 {showSidebar && <Sidebar />}
                 <div className="main-content">
                     <Routes>
-                        <Route path="/" element={<Beranda />} />
+                        <Route path="/" element={<Contoh />} />
                         <Route path="/pages/Hooke" element={<Hooke />} />
                         <Route path="/newtonn" element={<Newtonn />} />
                         <Route path="/newton1" element={<Newton1 />} />
@@ -41,6 +42,7 @@ const AppContent = () => {
                         <Route path="/GLB" element={<GerakLurus />} />
                         <Route path="/GLBB" element={<GerakLurus />} />
                         <Route path="/latihanNewton" element={<LatihanSoal />} />
+                        <Route path="/contoh" element={<Contoh />} />
                     </Routes>
                 </div>
             </div>
