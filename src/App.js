@@ -11,6 +11,7 @@ import Usaha from "./pages/Usaha";
 import GerakLurus from "./pages/GerakLurus";
 import LatihanSoal from "./pages/LatihanNewton";
 import Dashboard from "./pages/Dashboard";
+import Fluida from "./pages/Fluida";
 
 const App = () => {
     return (
@@ -32,6 +33,7 @@ const App = () => {
                         <Route path="/GLB" element={<GerakLurus />} />
                         <Route path="/GLBB" element={<GerakLurus />} />
                         <Route path="/latihanNewton" element={<LatihanSoal />} />
+                        <Route path="/fluida" element={<Fluida/>}/>
                     </Routes>
                 </div>
                 </>

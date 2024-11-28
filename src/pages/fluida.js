@@ -3,7 +3,7 @@ import { Line } from "react-chartjs-2";
 import "./Fluida.css";
 
 const Fluida = () => {
-  // Data untuk grafik
+
   const pressureData = {
     labels: ["0 m", "5 m", "10 m", "15 m", "20 m"],
     datasets: [
@@ -60,7 +60,9 @@ const Fluida = () => {
         <h3>Rumus Utama</h3>
         <ul>
           <li>
-            <strong>Tekanan Hidrostatis:</strong> \( P = \rho \cdot g \cdot h \)
+            <strong>Tekanan Hidrostatis:</strong> 
+            <span style={{ fontStyle: "italic" }}>P = ρ × g × h</span>
+
             <ul>
               <li><strong>P:</strong> Tekanan (Pa)</li>
               <li><strong>ρ:</strong> Massa jenis fluida (kg/m³)</li>
@@ -82,7 +84,7 @@ const Fluida = () => {
             <strong>Jawab:</strong><br />
             Diketahui: <br />
             ρ = 1000 kg/m³, g = 9.8 m/s², h = 10 m<br />
-            Tekanan: \( P = \rho \cdot g \cdot h = 1000 \cdot 9.8 \cdot 10 = 98000 \, \text{Pa} \).
+            Tekanan: \( P = \rho \cdot g \cdot h = 1000 \cdot 9.8 \cdot 10 = 98000 \, \text).
           </p>
         </div>
       </section>
