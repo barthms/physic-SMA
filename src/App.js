@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
-import "./styling/global.css"; 
+import "./styling/global.css";
+import './index.css'; 
 
 import Beranda from "./pages/Beranda";
 import Newtonn from "./pages/Newtonn";
@@ -10,12 +11,12 @@ import Sidebar from "./components/Sidebar";
 import Hooke from './pages/Hooke';
 import Usaha from "./pages/Usaha";
 import GerakLurus from "./pages/GerakLurus";
-import LatihanSoal from "./pages/LatihanNewton";
+import Soal from "./pages/LatihanSoal";
 import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
 
 import Fluida from "./pages/Fluida";
-import Contoh from "./pages/contoh/Contoh";
+import Contoh from "./pages/contoh/Contohh";
 
 const AppContent = () => {
     const location = useLocation();
@@ -41,7 +42,7 @@ const AppContent = () => {
                         <Route path="/gerakmelingkar" element={<GerakMelingkar />} />
                         <Route path="/GLB" element={<GerakLurus />} />
                         <Route path="/GLBB" element={<GerakLurus />} />
-                        <Route path="/latihanNewton" element={<LatihanSoal />} />
+                        <Route path="/latihanNewton" element={<Soal />} />
                         <Route path="/contoh" element={<Contoh />} />
                     </Routes>
                 </div>
