@@ -166,4 +166,4 @@ const NewtonLaws = () => {
   );
 };
 
-export default NewtonLaws;
+export default NewtonLaws;
