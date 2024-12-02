@@ -5,7 +5,7 @@ import "./styling/global.css";
 
 import Beranda from "./pages/Beranda";
 import Newtonn from "./pages/Newtonn";
-import Newton1 from "./pages/NewtonLaws";
+
 import Sidebar from "./components/Sidebar";
 import Hooke from './pages/Hooke';
 import Usaha from "./pages/Usaha";
@@ -13,8 +13,12 @@ import GerakLurus from "./pages/GerakLurus";
 import LatihanSoal from "./pages/LatihanNewton";
 import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
+import Newton1 from "./pages/newton1"; 
+import FluidaStatic from "./pages/fluida";
 
-import Fluida from "./pages/Fluida";
+
+
+// import Fluida from "./pages/Fluida";
 import Contoh from "./pages/contoh/Contoh";
 
 const AppContent = () => {
@@ -36,7 +40,7 @@ const AppContent = () => {
                         <Route path="/newton2" element={<Newton1 />} />
                         <Route path="/newton3" element={<Newton1 />} />
                         <Route path="/usaha" element={<Usaha/>} />
-                        <Route path="/fluida" element={<Fluida />} />
+                        <Route path="/fluida" element={<FluidaStatic />} />
                         <Route path="/geraklurus" element={<GerakLurus />} />
                         <Route path="/gerakmelingkar" element={<GerakMelingkar />} />
                         <Route path="/GLB" element={<GerakLurus />} />

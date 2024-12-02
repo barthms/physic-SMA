@@ -1,0 +1,25 @@
+/* Fluida.css */
+
+/* Menambahkan jarak antara teks dan grafik */
+.text-section {
+  margin-bottom: 40px; /* Jarak bawah untuk teks */
+}
+
+.chart-section {
+  margin-top: 40px; /* Jarak atas untuk grafik */
+}
+
+.card {
+  margin-bottom: 30px; /* Jarak bawah pada kartu grafik */
+}
+
+/* Memperbesar jarak antar elemen dalam kolom */
+.mb-5 {
+  margin-bottom: 50px !important;
+}
+
+/* Untuk padding tambahan pada container */
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
