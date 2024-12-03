@@ -82,7 +82,7 @@ const Fluida = () => {
             <strong>Jawab:</strong><br />
             Diketahui: <br />
             ρ = 1000 kg/m³, g = 9.8 m/s², h = 10 m<br />
-            Tekanan: \( P = \rho \cdot g \cdot h = 1000 \cdot 9.8 \cdot 10 = 98000 \, \text{Pa} \).
+            Tekanan: \( P = \rho \cdot g \cdot h = 1000 \cdot 9.8 \cdot 10 = 98000 \, \text(Pa) \).
           </p>
         </div>
       </section>

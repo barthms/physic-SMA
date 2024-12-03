@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./styling/global.css"; 
-
 import Beranda from "./pages/Beranda";
 import Newtonn from "./pages/Newtonn";
 import Newton1 from "./pages/NewtonLaws";
@@ -13,8 +12,11 @@ import GerakLurus from "./pages/GerakLurus";
 import LatihanSoal from "./pages/LatihanNewton";
 import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
-
-import Fluida from "./pages/Fluida";
+import GerakJatuhBebas from "./pages/GerakJatuhBebas";
+import GerakVertikalAtas from "./pages/GerakVertikalAtas";
+import GerakVertikalBawah from "./pages/GerakVertikalBawah";
+import GerakLurusBeraturan from "./pages/GerakLurusBeraturan";
+import Fisik from "./pages/Fisik";
 
 const AppContent = () => {
     const location = useLocation();
@@ -35,12 +37,15 @@ const AppContent = () => {
                         <Route path="/newton2" element={<Newton1 />} />
                         <Route path="/newton3" element={<Newton1 />} />
                         <Route path="/usaha" element={<Usaha/>} />
-                        <Route path="/fluida" element={<Fluida />} />
                         <Route path="/geraklurus" element={<GerakLurus />} />
                         <Route path="/gerakmelingkar" element={<GerakMelingkar />} />
-                        <Route path="/GLB" element={<GerakLurus />} />
-                        <Route path="/GLBB" element={<GerakLurus />} />
                         <Route path="/latihanNewton" element={<LatihanSoal />} />
+                        <Route path="/gerakjatuhbebas" element={<GerakJatuhBebas />} />
+                        <Route path="/gerakvertikalatas" element={<GerakVertikalAtas />} />
+                        <Route path="/gerakvertikalbawah" element={<GerakVertikalBawah />} />
+                        <Route path="/geraklurusberaturan" element={<GerakLurusBeraturan />} />
+                        <Route path="/fisik" element={<Fisik />} />
+
                     </Routes>
                 </div>
             </div>
