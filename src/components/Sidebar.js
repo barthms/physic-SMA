@@ -17,6 +17,15 @@ const Sidebar = () => {
             <ul className="nav-list">
                 <li className="nav-item">
                     <Link to="/pages/Hooke">Hukum Hooke</Link>
+                    <ul className="sub-nav">
+                        <Link to="/pages/EnergiP">Energi Potensial Pegas</Link>
+                    </ul>
+                    <ul className="sub-nav">
+                        <Link to="/pages/Besaran">Besaran Hukum Hooke</Link>
+                    </ul>
+                    <ul className="sub-nav">
+                        <Link to="/pages/Susunanpegas">Susunan Pegas</Link>
+                    </ul>
                 </li>
                 <li className="nav-item">
                     <Link to="/newtonn">Hukum Newton</Link>
@@ -32,6 +41,9 @@ const Sidebar = () => {
                 </li>
                 <li className="nav-item">
                     <Link to="/fluida">Fluida</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/pages/Suhu">Suhu dan Kalor</Link>
                 </li>
             </ul>
         </div>

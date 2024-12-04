@@ -13,12 +13,12 @@ import GerakLurus from "./pages/GerakLurus";
 import Suhu from "./pages/Suhu";
 import EnergiP from "./pages/EnergiP";
 import Besaran from "./pages/Besaran";
-
 import LatihanSoal from "./pages/LatihanNewton";
 import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
-
 import Fluida from "./pages/Fluida";
+import SusunanPegas from "./pages/susunanpegas";
+import SuhudanKalor from "./pages/Suhu";
 
 const AppContent = () => {
     const location = useLocation();
@@ -46,8 +46,10 @@ const AppContent = () => {
                         <Route path="/GLBB" element={<GerakLurus />} />
                         <Route path="/latihanNewton" element={<LatihanSoal />} />
                         <Route path="/suhu" element={<Suhu />} />
-                        <Route path="/energi" element={<EnergiP />} />
-                        <Route path="/besaran" element={<Besaran />} />
+                        <Route path="/pages/energip" element={<EnergiP />} />
+                        <Route path="/pages/besaran" element={<Besaran />} />
+                        <Route path="/pages/susunanpegas" element={<SusunanPegas/>}/>
+                        <Route path="/pages/suhu"element={<SuhudanKalor/>}/>
                     </Routes>
                 </div>
             </div>
