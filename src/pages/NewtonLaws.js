@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import inersia from '../assets/inersia.jpg';
-import percepatan from '../assets/percepatan.png';
+import percepatan from '../assets/percepatan.jpeg';
+import aksireaksi from '../assets/aksireaksi.jpg'
 const NewtonLaws = () => {
   const [showExplanations, setShowExplanations] = useState({
     law1: false,
@@ -84,12 +85,12 @@ const NewtonLaws = () => {
     },
     {
       id: "law3",
-      title: "Hukum Newton Ketiga",
+      title: "Hukum Aksi Reaksi (Hukum Newton 3)",
       description:
         "Hukum Newton Ketiga menyatakan bahwa setiap aksi memiliki reaksi yang sama besar tetapi berlawanan arah.",
       explanations: [
         {
-          title: "Definisi Hukum Newton 3",
+          title: "Definisi Aksi Reaksi",
           content:
             "Hukum ini menggambarkan interaksi antara dua benda: saat salah satu benda memberikan gaya pada benda lain, benda kedua memberikan gaya balik yang sama besar tetapi berlawanan arah.",
         },
@@ -103,10 +104,10 @@ const NewtonLaws = () => {
           content: (
             <div>
               <p>
-                Berikut adalah ilustrasi aksi dan reaksi yang menunjukkan gaya yang saling berlawanan dan sama besar:
+                Berikut adalah rumus dari Hukum Newton 3 (Aksi Reaksi):
               </p>
               <img
-                src="assets/images/aksi-reaksi.png"
+                src={aksireaksi}
                 alt="Aksi dan Reaksi"
                 style={{ width: "100%", maxWidth: "600px", display: "block", margin: "0 auto" }}
               />
@@ -165,4 +166,4 @@ const NewtonLaws = () => {
   );
 };
 
-export default NewtonLaws;
+export default NewtonLaws;
