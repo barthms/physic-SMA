@@ -1,25 +1,26 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
-import "./styling/global.css"; 
+import "./styling/global.css";
+import './index.css';
 
-import Beranda from "./pages/Beranda";
+// import Beranda from "./pages/Beranda";
 import Newtonn from "./pages/Newtonn";
 
 import Sidebar from "./components/Sidebar";
+import ScrollToTop from "./renders/Scrolling";
 import Hooke from './pages/Hooke';
 import Usaha from "./pages/Usaha";
 import GerakLurus from "./pages/GerakLurus";
-import LatihanSoal from "./pages/LatihanNewton";
+import Soal from "./pages/LatihanSoal";
 import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
-import Newton1 from "./pages/newton1"; 
-import FluidaStatic from "./pages/fluida";
+import NewtonLaws from "./pages/NewtonLaws";
 
+import Fluida from "./pages/Fluida";
+import Contoh from "./pages/contoh/Contohh";
+import FluidaDinamis from "./pages/Dinamis";
 
-
-// import Fluida from "./pages/Fluida";
-import Contoh from "./pages/contoh/Contoh";
 
 const AppContent = () => {
     const location = useLocation();
@@ -36,16 +37,17 @@ const AppContent = () => {
                         <Route path="/" element={<Contoh />} />
                         <Route path="/pages/Hooke" element={<Hooke />} />
                         <Route path="/newtonn" element={<Newtonn />} />
-                        <Route path="/newton1" element={<Newton1 />} />
-                        <Route path="/newton2" element={<Newton1 />} />
-                        <Route path="/newton3" element={<Newton1 />} />
-                        <Route path="/usaha" element={<Usaha/>} />
-                        <Route path="/fluida" element={<FluidaStatic />} />
+                        <Route path="/newton1" element={<NewtonLaws />} />
+                        <Route path="/newton2" element={<NewtonLaws />} />
+                        <Route path="/newton3" element={<NewtonLaws />} />
+                        <Route path="/usaha" element={<Usaha />} />
+                        <Route path="/fluida" element={<Fluida />} />
+                        <Route path="/fluidaDinamis" element={<FluidaDinamis />} />
                         <Route path="/geraklurus" element={<GerakLurus />} />
                         <Route path="/gerakmelingkar" element={<GerakMelingkar />} />
                         <Route path="/GLB" element={<GerakLurus />} />
                         <Route path="/GLBB" element={<GerakLurus />} />
-                        <Route path="/latihanNewton" element={<LatihanSoal />} />
+                        <Route path="/latihanNewton" element={<Soal />} />
                         <Route path="/contoh" element={<Contoh />} />
                     </Routes>
                 </div>
@@ -57,6 +59,7 @@ const AppContent = () => {
 const App = () => {
     return (
         <Router>
+            <ScrollToTop />
             <AppContent />
         </Router>
     );
