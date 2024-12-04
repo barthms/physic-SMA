@@ -22,6 +22,12 @@ import Contoh from "./pages/contoh/Contohh";
 import FluidaDinamis from "./pages/Dinamis";
 
 
+import EnergiP from "./pages/EnergiP";
+import Besaran from "./pages/Besaran";
+import SusunanPegas from "./pages/susunanpegas";
+import SuhudanKalor from "./pages/Suhu";
+
+
 const AppContent = () => {
     const location = useLocation();
     const noSidebarPaths = ["/", "/latihanNewton", '/contoh'];
@@ -47,8 +53,13 @@ const AppContent = () => {
                         <Route path="/gerakmelingkar" element={<GerakMelingkar />} />
                         <Route path="/GLB" element={<GerakLurus />} />
                         <Route path="/GLBB" element={<GerakLurus />} />
-                        <Route path="/latihanNewton" element={<Soal />} />
+                        <Route path="/latihansoal" element={<Soal />} />
                         <Route path="/contoh" element={<Contoh />} />
+
+                        <Route path="/pages/energip" element={<EnergiP />} />
+                        <Route path="/pages/besaran" element={<Besaran />} />
+                        <Route path="/pages/susunanpegas" element={<SusunanPegas/>}/>
+                        <Route path="/pages/suhu"element={<SuhudanKalor/>}/>
                     </Routes>
                 </div>
             </div>
