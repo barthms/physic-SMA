@@ -10,7 +10,7 @@ const Usaha = () => {
                 <div className="row justify-content-center">
                     <div className="col-md-10">
                         <h1 className="text-center mb-4 text-primary fw-bold display-4 animate__animated animate__fadeInDown">
-                            Usaha dalam Fisika
+                            <em>Usaha dalam Fisika</em>
                         </h1>
                         <div className="card mb-4 shadow-lg animate__animated animate__fadeInUp">
                             <div className="card-body">

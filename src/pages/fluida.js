@@ -3,8 +3,8 @@ import { Line } from "react-chartjs-2";
 import "chart.js/auto";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import "./Fluida.css";
-import { Psychology } from "@mui/icons-material";
+import "../styling/Fluida.css";
+// import { Psychology } from "@mui/icons-material";
 import { BlockMath } from "react-katex";
 import pascal from "../assets/pascalh.png";
 import archimedes from "../assets/rumus archimedes.png";
@@ -110,7 +110,7 @@ const Fluida = () => {
                 animation: "fadeIn 1s ease-in",
               }}
             >
-              <Psychology className="me-2" /> <em>Apa Itu Fluida Statis?</em>
+              <div className="me-2"><em>Apa Itu Fluida Statis?</em></div>
             </h2>
             <div className="row">
               <div className="col-md-6 mb-4">
