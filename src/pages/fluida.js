@@ -11,33 +11,64 @@ import archimedes from "../assets/rumus archimedes.png";
 import stevin from "../assets/Stevin.png";
 
 const Fluida = () => {
-  // Data konsep fluida statis
-  const concepts = [
-    {
-      title: "Tekanan Hidrostatis",
-      description:
-        "Tekanan yang dialami oleh suatu benda di dalam fluida diam karena pengaruh berat fluida di atasnya.",
-      formula: "P = ρgh",
-      explanation:
-        "Dimana: P = tekanan, ρ = massa jenis fluida, g = percepatan gravitasi, h = kedalaman."
+  const [depth, setDepth] = useState([0, 5, 10, 15, 20]);
+  const [pressure, setPressure] = useState([0, 49000, 98000, 147000, 196000]);
+  const [currentDepth, setCurrentDepth] = useState(20);
+  const [previousDepth, setPreviousDepth] = useState(20);
+
+  const updateData = (newDepth) => {
+    const newPressure = newDepth.map((d) => 9800 * d); // Tekanan = ρgh
+    setDepth(newDepth);
+    setPressure(newPressure);
+  };
+
+  const handleSliderChange = (value) => {
+    const newDepthArray = Array.from({ length: parseInt(value) + 1 }, (_, i) => i);
+
+    setPreviousDepth(currentDepth); // Simpan kedalaman sebelumnya
+    setCurrentDepth(parseInt(value));
+    updateData(newDepthArray);
+  };
+
+  const data = {
+    labels: depth,
+    datasets: [
+      {
+        label: "Tekanan (Pa)",
+        data: pressure,
+        borderColor: "rgba(34, 193, 195, 1)",
+        backgroundColor: "rgba(34, 193, 195, 0.2)",
+        tension: 0.4,
+        pointRadius: 5,
+        pointHoverRadius: 7,
+      },
+    ],
+  };
+
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        display: true,
+        position: "top",
+      },
     },
-    {
-      title: "Hukum Pascal",
-      description:
-        "Tekanan yang diberikan pada fluida dalam ruang tertutup diteruskan ke segala arah dengan besar yang sama.",
-      formula: "F₁/A₁ = F₂/A₂",
-      explanation:
-        "Dimana: F = gaya, A = luas penampang. Prinsip ini digunakan pada dongkrak hidrolik."
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: "Kedalaman (m)",
+        },
+      },
+      y: {
+        title: {
+          display: true,
+          text: "Tekanan (Pa)",
+        },
+        beginAtZero: true,
+      },
     },
-    {
-      title: "Hukum Archimedes",
-      description:
-        "Benda yang dicelupkan sebagian atau seluruhnya ke dalam fluida akan mengalami gaya angkat ke atas sebesar berat fluida yang dipindahkan.",
-      formula: "Fa = ρ × g × V",
-      explanation:
-        "Dimana: Fa = gaya angkat, ρ = massa jenis fluida, V = volume fluida yang dipindahkan."
-    },
-  ];
+  };
 
   return (
     <div
