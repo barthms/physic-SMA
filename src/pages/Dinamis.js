@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './fluidadns.css';
+import '../styling/fluidadns.css';
 
-const FluidDynamicsPage = () => {
+const FluidaDinamis = () => {
   const [isImageVisible, setIsImageVisible] = useState(false);
 
   const toggleImage = () => {
@@ -54,4 +54,4 @@ const FluidDynamicsPage = () => {
   );
 };
 
-export default FluidDynamicsPage;
+export default FluidaDinamis;

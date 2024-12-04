@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import "../styling/sidebar.css";
 
 const Sidebar = () => {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isFluidaOpen, setIsFluidaOpen] = useState(false); // State untuk dropdown Fluida
 
-    const toggleSidebar = () => {
-        setIsOpen(!isOpen);
+    // Fungsi untuk toggle dropdown Fluida
+    const toggleFluida = () => {
+        setIsFluidaOpen((prev) => !prev);
     };
 
     return (
-        <div className={`sidebar ${isOpen ? "open" : "closed"}`}>
+        <div className={`sidebar`}>
             <div className="sidebar-header">
                 <h3>Materi Fisika</h3>
             </div>
@@ -30,8 +31,24 @@ const Sidebar = () => {
                 <li className="nav-item">
                     <Link to="/gerakmelingkar">Gerak Melingkar</Link>
                 </li>
+                {/* Dropdown untuk Fluida */}
                 <li className="nav-item">
-                    <Link to="/fluida">Fluida</Link>
+                    <button 
+                        className="nav-link dropdown-toggle" 
+                        onClick={toggleFluida}
+                    >
+                        Fluida
+                    </button>
+                    {isFluidaOpen && (
+                        <ul className="dropdown-list">
+                            <li className="dropdown-item">
+                                <Link to="/fluida">Fluida Statis</Link>
+                            </li>
+                            <li className="dropdown-item">
+                                <Link to="/fluidaDinamis">Fluida Dinamis</Link>
+                            </li>
+                        </ul>
+                    )}
                 </li>
             </ul>
         </div>
