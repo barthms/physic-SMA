@@ -15,11 +15,19 @@ import GerakLurus from "./pages/GerakLurus";
 import Soal from "./pages/LatihanSoal";
 import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
+
 import NewtonLaws from "./pages/NewtonLaws";
 
 import Fluida from "./pages/Fluida";
 import Contoh from "./pages/contoh/Contohh";
 import FluidaDinamis from "./pages/Dinamis";
+
+
+import GerakJatuhBebas from "./pages/GerakJatuhBebas";
+import GerakVertikalAtas from "./pages/GerakVertikalAtas";
+import GerakVertikalBawah from "./pages/GerakVertikalBawah";
+import GerakLurusBeraturan from "./pages/GerakLurusBeraturan";
+import Fisik from "./pages/Fisik";
 
 
 const AppContent = () => {
@@ -49,6 +57,12 @@ const AppContent = () => {
                         <Route path="/GLBB" element={<GerakLurus />} />
                         <Route path="/latihanNewton" element={<Soal />} />
                         <Route path="/contoh" element={<Contoh />} />
+                        <Route path="/gerakjatuhbebas" element={<GerakJatuhBebas />} />
+                        <Route path="/gerakvertikalatas" element={<GerakVertikalAtas />} />
+                        <Route path="/gerakvertikalbawah" element={<GerakVertikalBawah />} />
+                        <Route path="/geraklurusberaturan" element={<GerakLurusBeraturan />} />
+                        <Route path="/fisik" element={<Fisik />} />
+
                     </Routes>
                 </div>
             </div>

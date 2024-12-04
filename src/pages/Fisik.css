@@ -1,0 +1,120 @@
+/* Global Style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #bbb;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button + button {
+  background-color: #6c757d;
+}
+
+button + button:hover {
+  background-color: #495057;
+}
+
+.hasil {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.hasil h2 {
+  margin: 0;
+  color: #333;
+}
+
+.hasil p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.rumus {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.rumus h3 {
+  font-size: 1.2rem;
+  color: #333;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.rumus p,
+.rumus ul {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.rumus ul {
+  padding-left: 20px;
+}
+
+.rumus ul li {
+  list-style-type: disc;
+  margin-bottom: 5px;
+}
