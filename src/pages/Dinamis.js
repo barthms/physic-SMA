@@ -29,7 +29,7 @@ const FluidaDinamis = () => {
         {isImageVisible && (
           <div className="fluid-image">
             <img
-              src="https://via.placeholder.com/600x300.png?text=Gambar+Fluida+Dinamis"
+              src="https://awsimages.detik.net.id/community/media/visual/2022/10/14/1164176852_169.jpeg?w=1200"
               alt="Ilustrasi Fluida Dinamis"
             />
           </div>

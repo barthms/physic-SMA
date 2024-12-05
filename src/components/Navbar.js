@@ -11,7 +11,7 @@ const Navbar = () => {
         <ul className="navbar-menu">
             <li><Link to='/'>Beranda</Link></li>
             <li><Link to='/pages/Hooke'>Materi</Link></li>
-            <li><Link to='/latihanNewton'>Latihan</Link></li>
+            <li><Link to='/latihansoal'>Latihan</Link></li>
         </ul>
     </nav>
     );
