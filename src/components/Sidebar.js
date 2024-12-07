@@ -3,11 +3,15 @@ import { Link } from "react-router-dom";
 import "../styling/sidebar.css";
 
 const Sidebar = () => {
-    const [isFluidaOpen, setIsFluidaOpen] = useState(false); // State untuk dropdown Fluida
-
-    // Fungsi untuk toggle dropdown Fluida
+    const [isFluidaOpen, setIsFluidaOpen] = useState(false); 
+    const [isHookeOpen, setIsHookeOpen] = useState(false);
+    
     const toggleFluida = () => {
         setIsFluidaOpen((prev) => !prev);
+    };
+    const toggleDropdown = (event) => {
+        event.preventDefault();
+        setIsHookeOpen(!isHookeOpen);
     };
 
     return (
@@ -17,7 +21,29 @@ const Sidebar = () => {
             </div>
             <ul className="nav-list">
                 <li className="nav-item">
-                    <Link to="/pages/Hooke">Hukum Hooke</Link>
+                    <Link to="/pages/Hooke"
+                        className="nav-link"
+                    >
+                        Hukum Hooke
+                    </Link>
+                    <button
+                        className="dropdown-toggle"
+                        onClick={toggleDropdown}
+                        aria-expanded={isHookeOpen}>
+                    </button>
+                    {isHookeOpen && (
+                        <ul className="dropdown-list">
+                            <li className="dropdown-item">
+                                <Link to="/pages/EnergiP">Energi Potensial</Link>
+                            </li>
+                            <li className="dropdown-item">
+                                <Link to="/pages/Besaran">Besaran Hukum Hooke</Link>
+                            </li>
+                            <li className="dropdown-item">
+                                <Link to="/pages/Susunanpegas">Susunan Pegas</Link>
+                            </li>
+                        </ul>
+                    )}
                 </li>
                 <li className="nav-item">
                     <Link to="/newtonn">Hukum Newton</Link>
@@ -49,6 +75,9 @@ const Sidebar = () => {
                             </li>
                         </ul>
                     )}
+                </li>
+                <li className="nav-item">
+                    <Link to="/pages/Suhu">Suhu dan Kalor</Link>
                 </li>
             </ul>
         </div>

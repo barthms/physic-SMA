@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import "./GerakJatuhBebas.css"; 
+import "./GerakJatuhBebas.css";
 
 const GerakJatuhBebas = () => {
   const [bounceCount, setBounceCount] = useState(0);
@@ -10,9 +9,9 @@ const GerakJatuhBebas = () => {
 
   const handleBounce = () => {
     if (bounceCount < 100) {
-      setIsBouncing(true); 
+      setIsBouncing(true);
       setTimeout(() => {
-        setIsBouncing(false); 
+        setIsBouncing(false);
       }, 550);
 
       setBounceCount((prevCount) => prevCount + 1);
@@ -84,64 +83,56 @@ const GerakJatuhBebas = () => {
   ];
 
   return (
-    <Container fluid className="gjb-container">
-      <Row>
-        <Col>
-          <h1 className="text-center title-animation">Gerak Jatuh Bebas (GJB)</h1>
-          <p className="text-center description">
-            Menjelajahi konsep, rumus-rumus, dan penerapan Gerak Jatuh Bebas (GJB) dengan penjelasan yang mendalam.
-          </p>
-        </Col>
-      </Row>
+    <div className="gjb-container">
+      <div className="text-center">
+        <h1 className="title-animation">Gerak Jatuh Bebas (GJB)</h1>
+        <p className="description">
+          Menjelajahi konsep, rumus-rumus, dan penerapan Gerak Jatuh Bebas (GJB) dengan penjelasan yang mendalam.
+        </p>
+      </div>
 
-      <Row>
-        {content.map((item) => (
-          <Col md={6} lg={4} className="mb-4" key={item.id}>
-            <Card className="content-card shadow-lg">
-              <Card.Header className="card-header">
+      <div className="content-section">
+        <div className="content-grid">
+          {content.map((item) => (
+            <div className="content-item" key={item.id}>
+              <div className="content-header">
                 <h5>{item.title}</h5>
-              </Card.Header>
-              <Card.Body className="card-body">
-                <div
-                  dangerouslySetInnerHTML={{ __html: item.content }}
-                  className="text-content"
-                ></div>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+              </div>
+              <div
+                className="content-body"
+                dangerouslySetInnerHTML={{ __html: item.content }}
+              ></div>
+            </div>
+          ))}
+        </div>
+      </div>
 
-      <Row className="text-center mb-4">
-        <Col>
-          <Button
-            variant="primary"
-            onClick={() => setShowBounce(true)}
-          >
-            Tampilkan Bola Pantul
-          </Button>
-        </Col>
-      </Row>
+      <div className="text-center mb-4">
+        <button
+          className="btn btn-primary"
+          onClick={() => setShowBounce(true)}
+        >
+          Tampilkan Bola Pantul
+        </button>
+      </div>
 
       {showBounce && (
-        <Row className="text-center">
-          <Col>
-            <div className="basketball-container">
-              <div
-                className={`basketball ${isBouncing ? "bouncing" : ""}`}
-                onClick={handleBounce}
-              ></div>
-              <p>Jumlah Pantulan: {bounceCount}</p>
-              <div className="summary">
-                <p><b> Pantulan:</b></p>
-                <p>{summary}</p>
-                <p>Bola basket yang terus memantul hingga mencapai titik maksimum sebelum akhirnya berhenti, menggambarkan konsep gerak jatuh bebas dan bagaimana gravitasi mempengaruhi gerakan benda secara alami.</p>
-              </div>
+        <div className="text-center">
+          <div className="basketball-container">
+            <div
+              className={`basketball ${isBouncing ? "bouncing" : ""}`}
+              onClick={handleBounce}
+            ></div>
+            <p>Jumlah Pantulan: {bounceCount}</p>
+            <div className="summary">
+              <p><b> Pantulan:</b></p>
+              <p>{summary}</p>
+              <p>Bola basket yang terus memantul hingga mencapai titik maksimum sebelum akhirnya berhenti, menggambarkan konsep gerak jatuh bebas dan bagaimana gravitasi mempengaruhi gerakan benda secara alami.</p>
             </div>
-          </Col>
-        </Row>
+          </div>
+        </div>
       )}
-    </Container>
+    </div>
   );
 };
 

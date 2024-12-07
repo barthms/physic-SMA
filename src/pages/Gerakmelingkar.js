@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import gm1 from "../assets/gm1.png";
 import gm3 from "../assets/gm3.jpg";
@@ -57,27 +56,26 @@ const cardData = [
 
 const GerakMelingkar = () => {
   return (
-    <Container className="my-5">
+    <div className="my-5">
       <h1 className="title-animation text-center">Gerak Melingkar</h1>
-      <Row className="mt-4">
+      <div className="card-container mt-4">
         {cardData.map((card) => (
-          <Col md={6} lg={4} key={card.id} className="mb-4">
-            <Card className="hover-card shadow-sm">
-              <Card.Header className="bg-gradient text-white text-center">
-                {card.title}
-              </Card.Header>
-              <Card.Body>{card.content}</Card.Body>
-            </Card>
-          </Col>
+          <div className="card-item" key={card.id}>
+            <div className="card-header">
+              <h3>{card.title}</h3>
+            </div>
+            <div className="card-body">
+              {card.content}
+            </div>
+          </div>
         ))}
-      </Row>
+      </div>
       <div className="simulasi-box text-center">
-        
         <Link to="/Fisik">
           <button className="btn-animation">Simulasi Gerak</button>
         </Link>
       </div>
-    </Container>
+    </div>
   );
 };
 
