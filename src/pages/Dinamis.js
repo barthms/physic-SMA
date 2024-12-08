@@ -22,6 +22,7 @@ const FluidaDinamis = () => {
           
         </header>
 
+ FluidaDinamis
         <section id="konsep" className="mb-5">
           <h2 className="fw-bold mb-4 text-secondary">🌊 Konsep Utama Fluida Dinamis</h2>
           <div className="row">
@@ -43,6 +44,18 @@ const FluidaDinamis = () => {
                 dekat dinding karena gaya gesekan.
               </p>
             </div>
+
+        <button className="toggle-image-btn" onClick={toggleImage}>
+          {isImageVisible ? 'Sembunyikan Gambar' : 'Tampilkan Gambar'}
+        </button>
+
+        {isImageVisible && (
+          <div className="fluid-image">
+            <img
+              src="https://awsimages.detik.net.id/community/media/visual/2022/10/14/1164176852_169.jpeg?w=1200"
+              alt="Ilustrasi Fluida Dinamis"
+            />
+        main
           </div>
         </section>
 

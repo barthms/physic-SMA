@@ -1,0 +1,79 @@
+.container {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    color: #34495e;
+    font-style: italic;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  .section-title {
+  .card-header {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+  }
+}
+
+  .card-body {
+    padding: 20px;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ 
+  .animate-title {
+    animation: fadeIn 1s;
+  }
+ 
+  .animate-subtitle {
+    animation: fadeIn 1.5s;
+  }
+
+  .animate-section {
+    animation: fadeIn 2s;
+  }
+  
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2rem;
+    }
+}
+    .subtitle {
+      font-size: 1.3rem;
+    }
+  
+    .section-title {
+      font-size: 1.6rem;
+    }
+  
+    .card-header {
+      font-size: 1.1rem;
+    }
+  
+    .card-body {
+      padding: 15px;
+    }

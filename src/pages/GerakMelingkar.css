@@ -1,0 +1,94 @@
+/* Animasi judul */
+.title-animation {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efek hover pada kartu */
+.hover-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.hover-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animasi pada tombol simulasi */
+.btn-animation {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: buttonAnimation 1s ease-in-out infinite alternate;
+}
+
+.btn-animation:hover {
+  background-color: #0056b3;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Styling untuk simulasi box */
+.simulasi-box {
+  margin-top: 30px;
+}
+
+/* Styling untuk Row dan Col */
+.row {
+  margin: 0 -15px;
+}
+
+.col {
+  padding: 0 15px;
+}
+
+/* Animasi untuk konten yang masuk */
+.card-body p {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi gambar pada konten */
+.card-body img {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.card-body img:hover {
+  transform: scale(1.1);
+}
+

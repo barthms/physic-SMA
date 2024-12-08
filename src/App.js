@@ -3,28 +3,38 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from "react-route
 import 'bootstrap/dist/css/bootstrap.css';
 import "./styling/global.css";
 import './index.css';
-
-// import Beranda from "./pages/Beranda";
 import Newtonn from "./pages/Newtonn";
-
 import Sidebar from "./components/Sidebar";
-import ScrollToTop from "./renders/Scrolling";
 import Hooke from './pages/Hooke';
 import Usaha from "./pages/Usaha";
 import GerakLurus from "./pages/GerakLurus";
 import Soal from "./pages/LatihanSoal";
 import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
+<<<<<<< Updated upstream
+import SuhudanKalor from "./pages/Suhu";
+=======
+>>>>>>> Stashed changes
 import NewtonLaws from "./pages/NewtonLaws";
-
 import Fluida from "./pages/Fluida";
 import Contoh from "./pages/contoh/Contohh";
 import FluidaDinamis from "./pages/Dinamis";
+<<<<<<< Updated upstream
+import EnergiPotensial from "./pages/EnergiP";
+import Besaran from "./pages/Besaran";
+import SusunanPegas from "./pages/susunanpegas";
+import GerakJatuhBebas from "./pages/GerakJatuhBebas";
+import GerakVertikalAtas from "./pages/GerakVertikalAtas";
+import GerakVertikalBawah from "./pages/GerakVertikalBawah";
+
+=======
+import Fisik from "./pages/Fisik";
+>>>>>>> Stashed changes
 
 
 const AppContent = () => {
     const location = useLocation();
-    const noSidebarPaths = ["/", "/latihanNewton", '/contoh'];
+    const noSidebarPaths = ["/", "/latihansoal", '/contoh'];
     const showSidebar = !noSidebarPaths.includes(location.pathname);
 
     return (
@@ -38,8 +48,6 @@ const AppContent = () => {
                         <Route path="/pages/Hooke" element={<Hooke />} />
                         <Route path="/newtonn" element={<Newtonn />} />
                         <Route path="/newton1" element={<NewtonLaws />} />
-                        <Route path="/newton2" element={<NewtonLaws />} />
-                        <Route path="/newton3" element={<NewtonLaws />} />
                         <Route path="/usaha" element={<Usaha />} />
                         <Route path="/fluida" element={<Fluida />} />
                         <Route path="/fluidaDinamis" element={<FluidaDinamis />} />
@@ -47,8 +55,19 @@ const AppContent = () => {
                         <Route path="/gerakmelingkar" element={<GerakMelingkar />} />
                         <Route path="/GLB" element={<GerakLurus />} />
                         <Route path="/GLBB" element={<GerakLurus />} />
-                        <Route path="/latihanNewton" element={<Soal />} />
+                        <Route path="/latihansoal" element={<Soal />} />
                         <Route path="/contoh" element={<Contoh />} />
+<<<<<<< Updated upstream
+                        <Route path="/pages/suhu" element={<SuhudanKalor/>}/>
+                        <Route path="/pages/EnergiP" element={<EnergiPotensial/>}/>
+                        <Route path="/pages/Besaran" element={<Besaran/>}/>
+                        <Route path="/pages/susunanpegas" element={<SusunanPegas/>}/>
+                        <Route path="/pages/GerakJatuhBebas" element={<GerakJatuhBebas/>}/>
+                        <Route path="/pages/GerakVertikalAtas" element={<GerakVertikalAtas/>}/>
+                        <Route path="/pages/GerakVertikalBawah" element={<GerakVertikalBawah/>}/>
+=======
+                        <Route path="/fisik" element={<Fisik />} />
+>>>>>>> Stashed changes
                     </Routes>
                 </div>
             </div>
@@ -59,7 +78,6 @@ const AppContent = () => {
 const App = () => {
     return (
         <Router>
-            <ScrollToTop />
             <AppContent />
         </Router>
     );
