@@ -11,25 +11,23 @@ import GerakLurus from "./pages/GerakLurus";
 import Soal from "./pages/LatihanSoal";
 import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
-<<<<<<< Updated upstream
-import SuhudanKalor from "./pages/Suhu";
-=======
->>>>>>> Stashed changes
+import SuhudanKalor from "./pages/Suhu"; // Sesuaikan path jika berbeda
+
+
+
 import NewtonLaws from "./pages/NewtonLaws";
 import Fluida from "./pages/Fluida";
 import Contoh from "./pages/contoh/Contohh";
 import FluidaDinamis from "./pages/Dinamis";
-<<<<<<< Updated upstream
+
 import EnergiPotensial from "./pages/EnergiP";
 import Besaran from "./pages/Besaran";
 import SusunanPegas from "./pages/susunanpegas";
 import GerakJatuhBebas from "./pages/GerakJatuhBebas";
 import GerakVertikalAtas from "./pages/GerakVertikalAtas";
 import GerakVertikalBawah from "./pages/GerakVertikalBawah";
-
-=======
 import Fisik from "./pages/Fisik";
->>>>>>> Stashed changes
+
 
 
 const AppContent = () => {
@@ -56,18 +54,15 @@ const AppContent = () => {
                         <Route path="/GLB" element={<GerakLurus />} />
                         <Route path="/GLBB" element={<GerakLurus />} />
                         <Route path="/latihansoal" element={<Soal />} />
-                        <Route path="/contoh" element={<Contoh />} />
-<<<<<<< Updated upstream
-                        <Route path="/pages/suhu" element={<SuhudanKalor/>}/>
+                        <Route path="/pages/suhudankalor" element={<SuhudanKalor/>}/>
                         <Route path="/pages/EnergiP" element={<EnergiPotensial/>}/>
                         <Route path="/pages/Besaran" element={<Besaran/>}/>
                         <Route path="/pages/susunanpegas" element={<SusunanPegas/>}/>
                         <Route path="/pages/GerakJatuhBebas" element={<GerakJatuhBebas/>}/>
                         <Route path="/pages/GerakVertikalAtas" element={<GerakVertikalAtas/>}/>
                         <Route path="/pages/GerakVertikalBawah" element={<GerakVertikalBawah/>}/>
-=======
-                        <Route path="/fisik" element={<Fisik />} />
->>>>>>> Stashed changes
+                        <Route path="/Fisik" element={<Fisik />} />
+
                     </Routes>
                 </div>
             </div>
