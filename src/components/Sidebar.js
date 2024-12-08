@@ -57,7 +57,11 @@ const Sidebar = () => {
                     <Link to="/usaha">Usaha dan Energi</Link>
                 </li>
                 <li className="nav-item">
+<<<<<<< Updated upstream
                     <Link to="/geraklurus"
+=======
+                    <Link to="/GerakLurus"
+>>>>>>> Stashed changes
                         className="nav-link"
                     >
                         Gerak Lurus
@@ -73,6 +77,12 @@ const Sidebar = () => {
                                 <Link to="/pages/GerakJatuhBebas">Gerak Jatuh Bebas</Link>
                             </li>
                             <li className="dropdown-item">
+<<<<<<< Updated upstream
+=======
+                                <Link to="/pages/GerakLurusBeraturan">Gerak Lurus Beraturan</Link>
+                            </li>
+                            <li className="dropdown-item">
+>>>>>>> Stashed changes
                                 <Link to="/pages/GerakVertikalAtas">Gerak Vertikal Atas</Link>
                             </li>
                             <li className="dropdown-item">
@@ -81,7 +91,7 @@ const Sidebar = () => {
                         </ul>
                     )}
                 </li>
-                <li className="nav-item">
+                <li className="dropdown-item">
                     <Link to="/gerakmelingkar">Gerak Melingkar</Link>
                 </li>
                 {/* Dropdown untuk Fluida */}

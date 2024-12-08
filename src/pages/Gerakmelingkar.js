@@ -4,6 +4,8 @@ import gm1 from "../assets/gm1.png";
 import gm3 from "../assets/gm3.jpg";
 import bianglala from "../assets/Bianglala.png";
 import "./GerakMelingkar.css";
+import Fisik from "./Fisik";
+
 
 
 const cardData = [

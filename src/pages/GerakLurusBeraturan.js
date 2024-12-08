@@ -4,7 +4,7 @@ import gm2 from '../assets/gm2.png';
 import gm3 from '../assets/gm3.jpg';
 import gm4 from '../assets/gm4.png';
 
-function GerakMelingkar() {
+function GerakLurusBeraturan() {
   return (
     <div className="container mt-5">
       <div className="header text-center mb-4">
@@ -57,4 +57,4 @@ function GerakMelingkar() {
   );
 }
 
-export default GerakMelingkar;
+export default GerakLurusBeraturan;

@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from "react-route
 import 'bootstrap/dist/css/bootstrap.css';
 import "./styling/global.css";
 import './index.css';
-
-// import Beranda from "./pages/Beranda";
 import Newtonn from "./pages/Newtonn";
 import Sidebar from "./components/Sidebar";
 import Hooke from './pages/Hooke';
@@ -13,11 +11,15 @@ import GerakLurus from "./pages/GerakLurus";
 import Soal from "./pages/LatihanSoal";
 import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
+<<<<<<< Updated upstream
 import SuhudanKalor from "./pages/Suhu";
+=======
+>>>>>>> Stashed changes
 import NewtonLaws from "./pages/NewtonLaws";
-import Fluida from "./pages/fluida";
+import Fluida from "./pages/Fluida";
 import Contoh from "./pages/contoh/Contohh";
 import FluidaDinamis from "./pages/Dinamis";
+<<<<<<< Updated upstream
 import EnergiPotensial from "./pages/EnergiP";
 import Besaran from "./pages/Besaran";
 import SusunanPegas from "./pages/susunanpegas";
@@ -25,6 +27,9 @@ import GerakJatuhBebas from "./pages/GerakJatuhBebas";
 import GerakVertikalAtas from "./pages/GerakVertikalAtas";
 import GerakVertikalBawah from "./pages/GerakVertikalBawah";
 
+=======
+import Fisik from "./pages/Fisik";
+>>>>>>> Stashed changes
 
 
 const AppContent = () => {
@@ -52,6 +57,7 @@ const AppContent = () => {
                         <Route path="/GLBB" element={<GerakLurus />} />
                         <Route path="/latihansoal" element={<Soal />} />
                         <Route path="/contoh" element={<Contoh />} />
+<<<<<<< Updated upstream
                         <Route path="/pages/suhu" element={<SuhudanKalor/>}/>
                         <Route path="/pages/EnergiP" element={<EnergiPotensial/>}/>
                         <Route path="/pages/Besaran" element={<Besaran/>}/>
@@ -59,6 +65,9 @@ const AppContent = () => {
                         <Route path="/pages/GerakJatuhBebas" element={<GerakJatuhBebas/>}/>
                         <Route path="/pages/GerakVertikalAtas" element={<GerakVertikalAtas/>}/>
                         <Route path="/pages/GerakVertikalBawah" element={<GerakVertikalBawah/>}/>
+=======
+                        <Route path="/fisik" element={<Fisik />} />
+>>>>>>> Stashed changes
                     </Routes>
                 </div>
             </div>
