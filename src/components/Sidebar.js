@@ -5,6 +5,7 @@ import "../styling/sidebar.css";
 const Sidebar = () => {
     const [isFluidaOpen, setIsFluidaOpen] = useState(false); 
     const [isHookeOpen, setIsHookeOpen] = useState(false);
+    const [isGerakLurusOpen, setIsGerakLurusOpen] = useState(false);
     
     const toggleFluida = () => {
         setIsFluidaOpen((prev) => !prev);
@@ -12,6 +13,10 @@ const Sidebar = () => {
     const toggleDropdown = (event) => {
         event.preventDefault();
         setIsHookeOpen(!isHookeOpen);
+    };
+    const toggleDropdownGerakLurus = (event) => {
+        event.preventDefault();
+        setIsGerakLurusOpen(!isGerakLurusOpen);
     };
 
     return (
@@ -40,7 +45,7 @@ const Sidebar = () => {
                                 <Link to="/pages/Besaran">Besaran Hukum Hooke</Link>
                             </li>
                             <li className="dropdown-item">
-                                <Link to="/pages/Susunanpegas">Susunan Pegas</Link>
+                                <Link to="/pages/susunanpegas">Susunan Pegas</Link>
                             </li>
                         </ul>
                     )}
@@ -52,7 +57,29 @@ const Sidebar = () => {
                     <Link to="/usaha">Usaha dan Energi</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/geraklurus">Gerak Lurus</Link>
+                    <Link to="/geraklurus"
+                        className="nav-link"
+                    >
+                        Gerak Lurus
+                    </Link>
+                    <button
+                        className="dropdown-toggle"
+                        onClick={toggleDropdownGerakLurus}
+                        aria-expanded={isGerakLurusOpen}>
+                    </button>
+                    {isGerakLurusOpen && (
+                        <ul className="dropdown-list">
+                            <li className="dropdown-item">
+                                <Link to="/pages/GerakJatuhBebas">Gerak Jatuh Bebas</Link>
+                            </li>
+                            <li className="dropdown-item">
+                                <Link to="/pages/GerakVertikalAtas">Gerak Vertikal Atas</Link>
+                            </li>
+                            <li className="dropdown-item">
+                                <Link to="/pages/GerakVertikalBawah">Gerak Vertikal Bawah</Link>
+                            </li>
+                        </ul>
+                    )}
                 </li>
                 <li className="nav-item">
                     <Link to="/gerakmelingkar">Gerak Melingkar</Link>

@@ -13,11 +13,18 @@ import GerakLurus from "./pages/GerakLurus";
 import Soal from "./pages/LatihanSoal";
 import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
-
+import SuhudanKalor from "./pages/Suhu";
 import NewtonLaws from "./pages/NewtonLaws";
 import Fluida from "./pages/fluida";
 import Contoh from "./pages/contoh/Contohh";
 import FluidaDinamis from "./pages/Dinamis";
+import EnergiPotensial from "./pages/EnergiP";
+import Besaran from "./pages/Besaran";
+import SusunanPegas from "./pages/susunanpegas";
+import GerakJatuhBebas from "./pages/GerakJatuhBebas";
+import GerakVertikalAtas from "./pages/GerakVertikalAtas";
+import GerakVertikalBawah from "./pages/GerakVertikalBawah";
+
 
 
 const AppContent = () => {
@@ -45,6 +52,13 @@ const AppContent = () => {
                         <Route path="/GLBB" element={<GerakLurus />} />
                         <Route path="/latihansoal" element={<Soal />} />
                         <Route path="/contoh" element={<Contoh />} />
+                        <Route path="/pages/suhu" element={<SuhudanKalor/>}/>
+                        <Route path="/pages/EnergiP" element={<EnergiPotensial/>}/>
+                        <Route path="/pages/Besaran" element={<Besaran/>}/>
+                        <Route path="/pages/susunanpegas" element={<SusunanPegas/>}/>
+                        <Route path="/pages/GerakJatuhBebas" element={<GerakJatuhBebas/>}/>
+                        <Route path="/pages/GerakVertikalAtas" element={<GerakVertikalAtas/>}/>
+                        <Route path="/pages/GerakVertikalBawah" element={<GerakVertikalBawah/>}/>
                     </Routes>
                 </div>
             </div>

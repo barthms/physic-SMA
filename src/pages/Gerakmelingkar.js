@@ -5,6 +5,7 @@ import gm3 from "../assets/gm3.jpg";
 import bianglala from "../assets/Bianglala.png";
 import "./GerakMelingkar.css";
 
+
 const cardData = [
   {
     id: 1,
@@ -71,7 +72,7 @@ const GerakMelingkar = () => {
         ))}
       </div>
       <div className="simulasi-box text-center">
-        <Link to="/Fisik">
+        <Link to="/pages/Fisik">
           <button className="btn-animation">Simulasi Gerak</button>
         </Link>
       </div>
