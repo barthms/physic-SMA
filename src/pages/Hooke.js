@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Robert from '../assets/Robert.jpg';
 import '../styling/Hooke.css';
+import '../styling/beranda.css';
 
 function Hooke() {
     const [showContent1, setShowContent1] = useState(false);
@@ -14,7 +15,7 @@ function Hooke() {
         <div className="container-fluid mt-5">
             <div className="row justify-content-center">
                 <div className="col-md-10">
-                    <h1 className="text-center mb-4 text-secondary fw-bold display-4">Hukum Hooke</h1>
+                    <h1 className="text-center mb-4 fw-bold display-4">Hukum Hooke</h1>
                         <div className="bg-white p-6 rounded-lg shadow-md">
                             <h2 className="text-2xl font-bold mb-4">Pengertian Hukum Hooke</h2>
                             <div className="flex-container">
@@ -33,7 +34,7 @@ function Hooke() {
                                 </div>
                                 <div className="image-container">
                                     <figure>
-                                        <img src= {Robert} width="200" height="200"/>
+                                        <img src={Robert} alt="Robert Hooke" width="200" height="200"/>
                                         <figcaption className="caption">Robert Hooke adalah seorang ilmuwan Inggris yang menemukan sel pertama kali pada tahun 1665. Ia juga dikenal sebagai penemu Hukum Hooke pada tahun 1660 yang menjelaskan hubungan antara gaya dan perubahan panjang pegas.</figcaption>
                                     </figure>
                                 </div>
@@ -41,7 +42,7 @@ function Hooke() {
                         </div>
 
                         <div className="mt-6 grid grid-cols-3 gap-4">
-                            <div className="bg-white p-6 rounded-lg shadow-md curosr-pointer" onClick={() => setShowContent1(!showContent1)}>
+                            <div className="bg-white p-6 rounded-lg shadow-md cursor-pointer" onClick={() => setShowContent1(!showContent1)}>
                                 <h3 className="text-xl font-bold mb-2">Rumus Hukum Hooke</h3>
                                 <p>Umumnya: F = k . Δx</p>
                                 {showContent1 && <div>
@@ -111,7 +112,7 @@ function Hooke() {
                                     <p>F = 10kg ⋅ 9.8m/s<sup>2</sup> = 98N </p>
                                     <p>Langkah 2: Hitung Δx</p>
                                     <p>Δx = F / k</p>
-                                    <p>Δx = 98N / 300N/m = 0.327m.</p>
+                                    <p>Δx = 98N / 300N/m = 0.327m</p>
                                     <p>Jadi, perpanjangan pegas Δx adalah 0.327m atau 32.7cm.</p>
                                 </div>
                                 </>

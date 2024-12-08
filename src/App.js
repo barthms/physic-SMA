@@ -14,13 +14,14 @@ import Soal from "./pages/LatihanSoal";
 import GerakMelingkar from "./pages/Gerakmelingkar";
 import Navbar from "./components/Navbar";
 import NewtonLaws from "./pages/NewtonLaws";
-import Fluida from "./pages/fluida";
+import Fluida from "./pages/Fluida";
 import Contoh from "./pages/contoh/Contohh";
 import FluidaDinamis from "./pages/Dinamis";
 import EnergiP from "./pages/EnergiP";
 import Besaran from "./pages/Besaran";
-import SusunanPegas from "./pages/susunanpegas";
+import SusunanPegas from "./pages/Susunanpegas";
 import SuhudanKalor from "./pages/Suhu";
+import Beranda from "./pages/Beranda";
 
 
 const AppContent = () => {
@@ -36,6 +37,7 @@ const AppContent = () => {
                 <div className="main-content">
                     <Routes>
                         <Route path="/" element={<Contoh />} />
+                        <Route path="beranda" element={<Beranda />} />
                         <Route path="/pages/Hooke" element={<Hooke />} />
                         <Route path="/newtonn" element={<Newtonn />} />
                         <Route path="/newton1" element={<NewtonLaws />} />

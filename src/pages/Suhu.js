@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { AccordionItem, AccordionHeader, AccordionBody } from "react-bootstrap";
+import '../styling/beranda.css';
 
 const SuhudanKalor = () => {
 
@@ -43,7 +43,7 @@ const SuhudanKalor = () => {
             <div className="container-fluid mt-5">
                 <div className="row justify-content-center">
                     <div className="col-md-10">
-                        <h1 className="text-center mb-4 text-secondary fw-bold display-4">Suhu dan Kalor</h1>
+                        <h1 className="text-center mb-4 text-primary fw-bold display-4">Suhu dan Kalor</h1>
                         <div className="card mb-4">
                             <div className="card-body">
                                 <h2 className="text-2xl font-bold mb-4">Pengertian Suhu</h2>

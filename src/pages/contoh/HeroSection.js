@@ -7,12 +7,14 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="overlay"></div>
       <div className="container hero-content text-center text-white">
+      <div className="JudulPage">
         <h1 data-aos="fade-down" data-aos-duration="1000">
           Fisik(Fisika Asik)
         </h1>
         <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
           Belajar Fisika Jadi Menyenangkan
         </h2>
+      </div>
         <p
           className="mt-4"
           data-aos="fade-up"

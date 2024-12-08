@@ -1,31 +1,31 @@
 import React from 'react';
 import { Container, Row, Col,Card, } from 'react-bootstrap';
-import MathJax from 'mathjax-react';
+// import MathJax from 'mathjax-react';
 import gm1 from '../assets/gm1.png';
 import gm2 from '../assets/gm2.png';
 import gm3 from '../assets/gm3.jpg';
 import gm4 from '../assets/gm3.jpg';
 import '../styling/GerakMelingkar.css';
 
-const FerrisWheel =() => {
-    return (
-        <div className="ferris-wheel-container">
-            <div className="ferris-wheel-icon" style={{ transform: "rotate(0deg) translate(-50%, -140%)"}}>
-            <img src="https://img.icons8.com/color/48/feris-wheel.png" />
-        </div>
-        <div className="ferris-wheel-icon" style={{ transform: "rotate(90deg) translate(-50%, -140%)"}}>
-            <img src="https://img.icons8.com/color/48/feris-wheel.png" />
-        </div>
-        <div className="ferris-wheel-icon" style={{ transform: "rotate(180deg) translate(-50%, -140%)"}}>
-            <img src="https://img.icons8.com/color/48/ferris-wheel.png" />
-        </div>
-        <div className="ferris-wheel-icon" style={{ transform: "rotate(270deg) translate(-50%, -140%)"}}>
-            <img src="https://img.icons8.com/color/48/ferris-wheel.png" />
-        </div>
-    </div>
+// const FerrisWheel =() => {
+//     return (
+//         <div className="ferris-wheel-container">
+//             <div className="ferris-wheel-icon" style={{ transform: "rotate(0deg) translate(-50%, -140%)"}}>
+//             <img src="https://img.icons8.com/color/48/feris-wheel.png" />
+//         </div>
+//         <div className="ferris-wheel-icon" style={{ transform: "rotate(90deg) translate(-50%, -140%)"}}>
+//             <img src="https://img.icons8.com/color/48/feris-wheel.png" />
+//         </div>
+//         <div className="ferris-wheel-icon" style={{ transform: "rotate(180deg) translate(-50%, -140%)"}}>
+//             <img src="https://img.icons8.com/color/48/ferris-wheel.png" />
+//         </div>
+//         <div className="ferris-wheel-icon" style={{ transform: "rotate(270deg) translate(-50%, -140%)"}}>
+//             <img src="https://img.icons8.com/color/48/ferris-wheel.png" />
+//         </div>
+//     </div>
 
-  );
-};
+//   );
+// };
     
 const cardData =[
     {
