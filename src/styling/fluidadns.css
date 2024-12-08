@@ -1,81 +1,187 @@
-/* FluidDynamicsPage.css */
 
-.fluid-dynamics-page {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.fluid-bg {
+  background: linear-gradient(120deg, #e3f2fd, #90caf9);
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+header {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 40px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: -50%;
+  left: -50%;
+  background: radial-gradient(circle, rgba(0, 153, 255, 0.3), transparent 70%);
+  animation: rotateGradient 8s infinite linear;
+  z-index: 0;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #0d6efd;
+  position: relative;
+  z-index: 1;
+}
+
+header .lead {
+  font-size: 1.25rem;
+  color: #6c757d;
+  position: relative;
+  z-index: 1;
+}
+
+/* Sections */
+section {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: slideInUp 1s ease-in-out;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #495057;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #0d6efd;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+section h4 {
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+section .list-group-item {
+  border: none;
+  background: transparent;
+  padding: 10px 15px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+section .list-group-item:hover {
+  transform: translateX(10px);
+  color: #0d6efd;
+}
+
+section pre {
+  font-family: 'Courier New', monospace;
+  background: #e3f2fd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.carousel {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.carousel img {
+  object-fit: cover;
+  filter: brightness(90%);
+  transition: all 0.3s ease;
+}
+
+.carousel img:hover {
+  filter: brightness(100%);
+  transform: scale(1.05);
+}
+
+.carousel-caption h5 {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(120deg, #90caf9, #0d6efd);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  .fluid-header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .fluid-header h1 {
-    margin: 0;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateGradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
     font-size: 2.5rem;
   }
-  
-  .fluid-content {
-    margin-top: 20px;
-    text-align: center;
+
+  section h2 {
+    font-size: 1.75rem;
   }
-  
-  .fluid-content h2 {
-    font-size: 2rem;
-  }
-  
-  .fluid-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  .toggle-image-btn {
-    padding: 10px 20px;
-    margin-top: 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+  header .lead {
     font-size: 1rem;
   }
-  
-  .toggle-image-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .fluid-image {
-    margin-top: 20px;
-  }
-  
-  .fluid-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .fluid-formula {
-    margin-top: 40px;
-    text-align: center;
-  }
-  
-  .formula {
-    font-size: 1.5rem;
-    background-color: #282c34;
-    color: white;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-  .fluid-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 1rem;
-    color: #777;
-  }
-  
+}
+
