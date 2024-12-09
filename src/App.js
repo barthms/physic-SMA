@@ -19,9 +19,10 @@ import NewtonLaws from "./pages/NewtonLaws";
 import Fluida from "./pages/Fluida";
 import Contoh from "./pages/contoh/Contohh";
 import FluidaDinamis from "./pages/Dinamis";
+
 import EnergiPotensial from "./pages/EnergiP";
 import Besaran from "./pages/Besaran";
-import SusunanPegas from "./pages/Susunanpegas";
+import SusunanPegas from "./pages/susunanpegas";
 import GerakJatuhBebas from "./pages/GerakJatuhBebas";
 import GerakVertikalAtas from "./pages/GerakVertikalAtas";
 import GerakVertikalBawah from "./pages/GerakVertikalBawah";
@@ -55,7 +56,7 @@ const AppContent = () => {
                         <Route path="/GLB" element={<GerakLurus />} />
                         <Route path="/GLBB" element={<GerakLurus />} />
                         <Route path="/latihansoal" element={<Soal />} />
-                        <Route path="/suhudankalor" element={<SuhudanKalor/>}/>
+                        <Route path="/pages/suhudankalor" element={<SuhudanKalor/>}/>
                         <Route path="/pages/EnergiP" element={<EnergiPotensial/>}/>
                         <Route path="/pages/Besaran" element={<Besaran/>}/>
                         <Route path="/pages/susunanpegas" element={<SusunanPegas/>}/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styling/GerakVertikalAtas.css';
+import './GerakVertikalAtas.css';
 
 function GerakVertikalAtas() {
   return (

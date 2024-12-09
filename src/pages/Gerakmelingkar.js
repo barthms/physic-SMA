@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import gm1 from "../assets/gm1.png";
 import gm3 from "../assets/gm3.jpg";
 import bianglala from "../assets/Bianglala.png";
-import "../styling/GerakMelingkar.css";
+import "./GerakMelingkar.css";
 
 const cardData = [
   {

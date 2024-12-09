@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styling/Fisik.css";
+import "./Fisik.css";
 
 const Fisik = () => {
   const [v, setV] = useState(""); 

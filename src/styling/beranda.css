@@ -80,6 +80,39 @@
   margin-left: 70px; /* Sesuaikan dengan lebar sidebar collapsed */
 }
 
+/* Hover effect */
+.nav-item a:hover {
+  background-color: #495057;
+  padding-left: 1.5rem; /* Efek padding saat hover */
+}
+
+/* Saat collapsed, sembunyikan teks kecuali ikon */
+.sidebar.closed .nav-item a {
+  text-align: center;
+  padding: 0.8rem 0.5rem;
+}
+
+/* Navbar (jika ada di atas halaman) */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1100;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  transition: margin-left 0.3s;
+}
+
+/* Konten utama */
+.main-content {
+  margin-left: 250px; /* Sama dengan lebar sidebar */
+  transition: margin-left 0.3s;
+}
+
+/* Jika sidebar collapsed */
+.sidebar.closed + .main-content {
+  margin-left: 70px; /* Sesuaikan dengan lebar sidebar collapsed */
+}
+
 h1{
   font-family: 'Arial', sans-serif;
   color: rgb(225, 178, 178);

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carousel } from 'react-bootstrap';
 import '../styling/fluidadns.css';
@@ -6,14 +6,8 @@ import Dinamis from '../assets/Dinamis.jpg';
 import Fluid from '../assets/konsepDinamis.jpg';
 
 const FluidaDinamis = () => {
-  const [isImageVisible, setIsImageVisible] = useState(false);
-
-//   const scrollToSection = (id) => {
-//     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//   };
-
-  const toggleImage = () => {
-    setIsImageVisible(!isImageVisible);
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (
@@ -22,11 +16,13 @@ const FluidaDinamis = () => {
         <header className="text-center mb-5">
           <h1 className="display-3 fw-bold text-primary">Fluida Dinamis</h1>
           <p className="lead text-secondary">
-            Fluida Dinamis adalah cabang fisika yang mempelajari sifat dan perilaku fluida (baik cair maupun gas) yang bergerak.
+            Fluida Dinamis adalah cabang fisika yang mempelajari sifat dan perilaku fluida (baik cair maupun gas) yang bergerak. 
             Ilmu ini sangat penting dalam memahami fenomena alam dan berbagai aplikasi teknik, seperti aerodinamika, hidrodinamika, meteorologi, dan teknik mesin.
           </p>
+          
         </header>
 
+ FluidaDinamis
         <section id="konsep" className="mb-5">
           <h2 className="fw-bold mb-4 text-secondary">🌊 Konsep Utama Fluida Dinamis</h2>
           <div className="row">
@@ -53,14 +49,13 @@ const FluidaDinamis = () => {
               {isImageVisible ? 'Sembunyikan Gambar' : 'Tampilkan Gambar'}
             </button>
 
-            {isImageVisible && (
-              <div className="fluid-image">
-                <img
-                  src="https://awsimages.detik.net.id/community/media/visual/2022/10/14/1164176852_169.jpeg?w=1200"
-                  alt="Ilustrasi Fluida Dinamis"
-                />
-              </div>
-            )}
+        {isImageVisible && (
+          <div className="fluid-image">
+            <img
+              src="https://awsimages.detik.net.id/community/media/visual/2022/10/14/1164176852_169.jpeg?w=1200"
+              alt="Ilustrasi Fluida Dinamis"
+            />
+        main
           </div>
         </section>
 

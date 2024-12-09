@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import '../styling/GerakLurus.css';
+import './GerakLurus.css';
 import mobil1 from '../assets/mobil1.png'; // Pastikan path gambar sesuai
 
 const GerakLurus = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styling/GerakJatuhBebas.css";
+import "./GerakJatuhBebas.css";
 
 const GerakJatuhBebas = () => {
   const [bounceCount, setBounceCount] = useState(0);
