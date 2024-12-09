@@ -102,7 +102,7 @@ const Sidebar = () => {
                     )}
                 </li>
                 <li className="nav-item">
-                    <Link to="/pages/Suhu">Suhu dan Kalor</Link>
+                    <Link to="/Suhudankalor">Suhu dan Kalor</Link>
                 </li>
             </ul>
         </div>

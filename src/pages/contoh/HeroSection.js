@@ -1,38 +1,21 @@
 import React from "react";
+import "../../styling/heroSection.css";
 import { Link } from "react-router-dom";
-import "../../styling/beranda.css";
 
 const HeroSection = () => {
   return (
-    <section className="hero-section">
-      <div className="overlay"></div>
-      <div className="container hero-content text-center text-white">
-        <h1 data-aos="fade-down" data-aos-duration="1000">
-          Fisik(Fisika Asik)
-        </h1>
-        <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
-          Belajar Fisika Jadi Menyenangkan
-        </h2>
-        <p
-          className="mt-4"
-          data-aos="fade-up"
-          data-aos-delay="400"
-          data-aos-duration="1000"
-        >
-          Selamat datang di portal pembelajaran Fisika SMA Kelas 10. Mari bersama-sama
-          menjelajahi dunia fisika dengan cara yang menarik dan mudah dipahami.
-          Temukan berbagai materi, latihan soal, dan eksperimen seru!
+    <header className="fisika-hero-section d-flex align-items-center">
+      <div className="container text-center text-white fisika-hero-container">
+        <h1 className="fisika-hero-title">Fisika Kelas 10</h1>
+        <p className="fisika-hero-text mt-3">
+          Belajar fisika dengan cara yang interaktif dan menyenangkan. Mari
+          jelajahi dunia fisika bersama kami!
         </p>
-        <Link
-          className="btn btn-primary mt-4"
-          to={"/pages/Hooke"}
-          data-aos="zoom-in"
-          data-aos-delay="600"
-        >
-          Mulai Belajar
-        </Link>
+        <h4 className="btn btn-success fisika-hero-button mt-4">
+          <Link to='pages/Hooke' className="font">Mulai Belajar</Link>
+        </h4>
       </div>
-    </section>
+    </header>
   );
 };
 

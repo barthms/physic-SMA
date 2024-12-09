@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Styling untuk Hero Section */
+  .fisika-hero-section {
+    background: url("../assets/background.jpg") no-repeat center center/cover;
+    height: 100vh;
+  }
+
+  
+  .fisika-hero-container {
+    z-index: 2;
+    position: relative;
+  }
+  
+  .fisika-hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .fisika-hero-text {
+    font-size: 1.2rem;
+  }
+  
+  .fisika-hero-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+.font{
+    text-decoration: none;
+    color: #2d2626;
+}
+  

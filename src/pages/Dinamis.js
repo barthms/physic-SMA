@@ -45,9 +45,9 @@ const FluidaDinamis = () => {
               </p>
             </div>
 
-        <button className="toggle-image-btn" onClick={toggleImage}>
-          {isImageVisible ? 'Sembunyikan Gambar' : 'Tampilkan Gambar'}
-        </button>
+            <button className="toggle-image-btn" onClick={toggleImage}>
+              {isImageVisible ? 'Sembunyikan Gambar' : 'Tampilkan Gambar'}
+            </button>
 
         {isImageVisible && (
           <div className="fluid-image">

@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling untuk Hero Section */
+.fisika-hero-section {
+  background: url("https://via.placeholder.com/1920x1080") no-repeat center center/cover;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fisika-hero-container {
+  z-index: 2;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fisika-hero-title {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.fisika-hero-text {
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fisika-hero-button {
+  font-size: 1rem;
+  padding: 10px 20px;
 }

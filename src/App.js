@@ -43,11 +43,13 @@ const AppContent = () => {
                 <div className="main-content">
                     <Routes>
                         <Route path="/" element={<Contoh />} />
+                        {/* <Route path="beranda" element={<Beranda />} /> */}
                         <Route path="/pages/Hooke" element={<Hooke />} />
                         <Route path="/newtonn" element={<Newtonn />} />
                         <Route path="/newton1" element={<NewtonLaws />} />
                         <Route path="/usaha" element={<Usaha />} />
                         <Route path="/fluida" element={<Fluida />} />
+                        <Route path="/dinamis" element={<FluidaDinamis />} />
                         <Route path="/fluidaDinamis" element={<FluidaDinamis />} />
                         <Route path="/geraklurus" element={<GerakLurus />} />
                         <Route path="/gerakmelingkar" element={<GerakMelingkar />} />
