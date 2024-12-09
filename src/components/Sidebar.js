@@ -3,15 +3,20 @@ import { Link } from "react-router-dom";
 import "../styling/sidebar.css";
 
 const Sidebar = () => {
-    const [isFluidaOpen, setIsFluidaOpen] = useState(false); 
+    const [isFluidaOpen, setIsFluidaOpen] = useState(false);
     const [isHookeOpen, setIsHookeOpen] = useState(false);
-    
+    const [isGerakLurusOpen, setIsGerakLurusOpen] = useState(false);
+
     const toggleFluida = () => {
         setIsFluidaOpen((prev) => !prev);
     };
     const toggleDropdown = (event) => {
         event.preventDefault();
         setIsHookeOpen(!isHookeOpen);
+    };
+    const toggleDropdownGerakLurus = (event) => {
+        event.preventDefault();
+        setIsGerakLurusOpen(!isGerakLurusOpen);
     };
 
     return (
@@ -21,16 +26,14 @@ const Sidebar = () => {
             </div>
             <ul className="nav-list">
                 <li className="nav-item">
-                    <Link to="/pages/Hooke"
-                        className="nav-link"
-                    >
+                    <Link to="/pages/Hooke" className="nav-link">
                         Hukum Hooke
                     </Link>
                     <button
                         className="dropdown-toggle"
                         onClick={toggleDropdown}
-                        aria-expanded={isHookeOpen}>
-                    </button>
+                        aria-expanded={isHookeOpen}
+                    ></button>
                     {isHookeOpen && (
                         <ul className="dropdown-list">
                             <li className="dropdown-item">
@@ -40,7 +43,7 @@ const Sidebar = () => {
                                 <Link to="/pages/Besaran">Besaran Hukum Hooke</Link>
                             </li>
                             <li className="dropdown-item">
-                                <Link to="/pages/Susunanpegas">Susunan Pegas</Link>
+                                <Link to="/pages/susunanpegas">Susunan Pegas</Link>
                             </li>
                         </ul>
                     )}
@@ -52,15 +55,37 @@ const Sidebar = () => {
                     <Link to="/usaha">Usaha dan Energi</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/geraklurus">Gerak Lurus</Link>
+                    <Link to="/GerakLurus" className="nav-link">
+                        Gerak Lurus
+                    </Link>
+                    <button
+                        className="dropdown-toggle"
+                        onClick={toggleDropdownGerakLurus}
+                        aria-expanded={isGerakLurusOpen}
+                    ></button>
+                    {isGerakLurusOpen && (
+                        <ul className="dropdown-list">
+                            <li className="dropdown-item">
+                                <Link to="/pages/GerakJatuhBebas">Gerak Jatuh Bebas</Link>
+                            </li>
+                            <li className="dropdown-item">
+                                <Link to="/pages/GerakLurusBeraturan">Gerak Lurus Beraturan</Link>
+                            </li>
+                            <li className="dropdown-item">
+                                <Link to="/pages/GerakVertikalAtas">Gerak Vertikal Atas</Link>
+                            </li>
+                            <li className="dropdown-item">
+                                <Link to="/pages/GerakVertikalBawah">Gerak Vertikal Bawah</Link>
+                            </li>
+                        </ul>
+                    )}
                 </li>
                 <li className="nav-item">
                     <Link to="/gerakmelingkar">Gerak Melingkar</Link>
                 </li>
-                {/* Dropdown untuk Fluida */}
                 <li className="nav-item">
-                    <button 
-                        className="nav-link dropdown-toggle" 
+                    <button
+                        className="nav-link dropdown-toggle"
                         onClick={toggleFluida}
                     >
                         Fluida
@@ -77,7 +102,7 @@ const Sidebar = () => {
                     )}
                 </li>
                 <li className="nav-item">
-                    <Link to="/pages/Suhu">Suhu dan Kalor</Link>
+                    <Link to="/Suhudankalor">Suhu dan Kalor</Link>
                 </li>
             </ul>
         </div>
